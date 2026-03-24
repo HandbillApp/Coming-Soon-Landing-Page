@@ -105,7 +105,96 @@
         <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
           Handbill is a mobile-first advertising and commerce platform turning smartphones into personal billboards. We combine performance ads, commission-based marketing, and analytics to help businesses scale smarter. Built in Ghana. 🚀
         </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+                <a href="#ip-protection" class="px-8 py-4 bg-slate-900 border border-slate-700 hover:border-red-600 text-white font-bold rounded-2xl transition-all flex items-center gap-2 group">
+                    <i data-lucide="shield-check" class="w-5 h-5 text-red-500"></i>
+                    View Patent & IP Document
+                </a>
       </section>
+
+      <!-- IP Protection Section -->
+        <section id="ip-protection" class="py-24 border-t border-slate-900">
+            <div class="max-w-4xl mx-auto reveal">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Handbill <span class="text-red-600">Patent & IP</span> Protection</h2>
+                    <div class="w-20 h-1 bg-red-600 mx-auto rounded-full mb-8"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                    <div class="p-8 rounded-3xl bg-slate-900/50 border border-slate-800">
+                        <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
+                            <i data-lucide="info" class="w-5 h-5 text-red-500"></i>
+                            Disclosure
+                        </h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                            The Handbill Team is currently in the process of applying for patent and intellectual property rights for its innovations, including the <strong>Proof-of-Engagement (PoE)</strong> system.
+                        </p>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            These efforts are being directed to the appropriate institutions in Ghana, including the <strong>Registrar General's Department (RGD)</strong> and the <strong>Copyright Office of Ghana</strong>, responsible for intellectual property protection.
+                        </p>
+                    </div>
+                    <div class="p-8 rounded-3xl bg-slate-900/50 border border-slate-800">
+                        <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
+                            <i data-lucide="target" class="w-5 h-5 text-red-500"></i>
+                            Our Goal
+                        </h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Our primary objective is to protect Handbill's unique business model and technological innovations in advertising and commerce, ensuring a secure environment for our partners and users.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Document Viewer / Summary -->
+                <div class="p-8 md:p-12 rounded-[2.5rem] bg-slate-950 border border-slate-800 shadow-2xl relative overflow-hidden mb-12">
+                    <div class="absolute top-0 right-0 p-8 opacity-5">
+                        <i data-lucide="file-text" class="w-48 h-48"></i>
+                    </div>
+                    
+                    <div class="relative z-10">
+                        <h3 class="text-2xl font-bold mb-6">Document Summary: PoE System</h3>
+                        <div class="space-y-4 text-slate-400 text-sm mb-10">
+                            <div class="flex gap-3">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-green-500 shrink-0"></i>
+                                <span><strong>Verified Attention:</strong> Proprietary method to track real human interaction before billing.</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-green-500 shrink-0"></i>
+                                <span><strong>Fraud Prevention:</strong> Advanced algorithms to detect and pause tracking during inactivity.</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-green-500 shrink-0"></i>
+                                <span><strong>Value Exchange:</strong> Direct user compensation model for verified engagement.</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <i data-lucide="check-circle-2" class="w-5 h-5 text-green-500 shrink-0"></i>
+                                <span><strong>Marketing Model:</strong> Handbill’s commission-based marketing model—where advertisers can transform into warehousemen who list products, and ad viewers can become agents who promote and sell those products—is a proprietary system and part of the intellectual property being protected by the Handbill Team.</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-red-600/5 border border-red-600/20 p-6 rounded-2xl mb-8">
+                            <h4 class="text-red-500 font-bold text-sm uppercase tracking-widest mb-3">Legal Protection Statement</h4>
+                            <p class="text-slate-300 text-xs leading-relaxed italic">
+                                The Handbill concept, features, and systems are proprietary innovations developed by the Handbill Team. Even if the patent or intellectual property rights are still pending or not yet approved, the ideas remain the intellectual property of the Handbill Team. Any individual, company, or organization that intends to replicate, implement, or commercialize these ideas must seek formal permission. Unauthorized use, duplication, or exploitation may result in legal action.
+                            </p>
+                        </div>
+
+                        <div class="flex flex-col items-center gap-4">
+                            <label class="flex items-center gap-3 cursor-pointer group">
+                                <input type="checkbox" id="ip-ack" class="w-5 h-5 rounded border-slate-700 bg-slate-900 text-red-600 focus:ring-red-600 transition-all">
+                                <span class="text-slate-400 text-xs group-hover:text-slate-200 transition-colors">I acknowledge and understand the intellectual property terms</span>
+                            </label>
+                            
+                            <a id="download-btn" href="#" class="opacity-50 pointer-events-none px-10 py-4 bg-red-600 hover:bg-red-700 text-white font-black uppercase tracking-widest rounded-2xl transition-all flex items-center gap-3 shadow-lg shadow-red-600/20">
+                                <i data-lucide="download" class="w-5 h-5"></i>
+                                Download Full Document (PDF)
+                            </a>
+                            <p id="download-hint" class="text-[10px] text-slate-600 uppercase tracking-widest">Please check the box above to enable download</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
       <!-- Concept Section -->
       <section class="py-24 relative reveal">
