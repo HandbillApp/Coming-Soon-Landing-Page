@@ -59,38 +59,27 @@
       <div class="absolute bottom-[-10%] right-[-10%] w-[50%] h-[50%] bg-blue-900/10 rounded-full blur-[120px]"></div>
     </div>
 
-    <!-- Header -->
-    <nav class="py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex justify-between items-center">
-      <div class="flex items-center gap-3">
-        <svg width="50" height="50" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="filter drop-shadow-lg scale-110">
-          <path d="M75 55C75 48.9249 70.0751 44 64 44H62.5C59.4624 44 57 41.5376 57 38.5V25C57 21.6863 54.3137 19 51 19C47.6863 19 45 21.6863 45 25V60.5C45 61.3284 44.3284 62 43.5 62C42.6716 62 42 61.3284 42 60.5V54.5C42 51.1863 39.3137 48.5 36 48.5C32.6863 48.5 30 51.1863 30 54.5V60.5C30 61.3284 29.3284 62 28.5 62C27.6716 62 27 61.3284 27 60.5V56.5C27 53.1863 24.3137 50.5 21 50.5C17.6863 50.5 15 53.1863 15 56.5V72C15 84.1503 24.8497 94 37 94H62.5C74.6503 94 84.5 84.1503 84.5 72V64.5C84.5 61.1863 81.8137 58.5 78.5 58.5V55H75Z" fill="#C02428" />
-          <rect x="35" y="10" width="30" height="55" rx="4" fill="#1e293b" />
-          <rect x="38" y="15" width="24" height="40" rx="1" fill="#C02428" />
-          <path d="M50 45V25M50 25C47 25 45 27 45 29C45 31 47 32 50 33C53 34 55 35 55 37C55 39 53 41 50 41M50 41C47 41 45 39 45 37" stroke="white" strokeWidth="2.5" strokeLinecap="round" />
-        </svg>
-        <div class="flex flex-col">
-          <span class="text-2xl font-bold tracking-tight text-white flex items-baseline">
-             Handbill<span class="text-red-600 text-xs ml-0.5">®</span>
-          </span>
-          <span class="text-[10px] uppercase tracking-[0.3em] text-slate-500 font-light -mt-1">mobiapp</span>
-        </div>
-      </div>
-      <div class="flex items-center gap-1 sm:gap-2">
-        <a href="https://github.com/HandbillApp" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors p-2" title="GitHub">
-          <i data-lucide="github" class="w-6 h-6"></i>
-        </a>
-        <a href="https://web.facebook.com/profile.php?id=100063724675329" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors p-2" title="Facebook">
-          <i data-lucide="facebook" class="w-6 h-6"></i>
-        </a>
-        <a href="https://www.instagram.com/handbill.app" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors p-2" title="Instagram">
-          <i data-lucide="instagram" class="w-6 h-6"></i>
-        </a>
-        <a href="https://www.youtube.com/@HandbillApp" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors p-2" title="YouTube">
-                <i data-lucide="youtube" class="w-6 h-6"></i>
-            </a>
-      </div>
-    </nav>
-     <!-- Desktop Menu -->
+<!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" id="main-header">
+        <nav class="py-4 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <a href="#" class="flex items-center gap-3">
+                    <svg width="40" height="40" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="filter drop-shadow-lg">
+                        <path d="M75 55C75 48.9249 70.0751 44 64 44H62.5C59.4624 44 57 41.5376 57 38.5V25C57 21.6863 54.3137 19 51 19C47.6863 19 45 21.6863 45 25V60.5C45 61.3284 44.3284 62 43.5 62C42.6716 62 42 61.3284 42 60.5V54.5C42 51.1863 39.3137 48.5 36 48.5C32.6863 48.5 30 51.1863 30 54.5V60.5C30 61.3284 29.3284 62 28.5 62C27.6716 62 27 61.3284 27 60.5V56.5C27 53.1863 24.3137 50.5 21 50.5C17.6863 50.5 15 53.1863 15 56.5V72C15 84.1503 24.8497 94 37 94H62.5C74.6503 94 84.5 84.1503 84.5 72V64.5C84.5 61.1863 81.8137 58.5 78.5 58.5V55H75Z" fill="#C02428" />
+                        <rect x="35" y="10" width="30" height="55" rx="4" fill="#1e293b" />
+                        <rect x="38" y="15" width="24" height="40" rx="1" fill="#C02428" />
+                        <path d="M50 45V25M50 25C47 25 45 27 45 29C45 31 47 32 50 33C53 34 55 35 55 37C55 39 53 41 50 41M50 41C47 41 45 39 45 37" stroke="white" stroke-width="2.5" stroke-linecap="round" />
+                    </svg>
+                    <div class="flex flex-col">
+                        <span class="text-xl font-bold tracking-tight text-white flex items-baseline">
+                            Handbill<span class="text-red-600 text-[10px] ml-0.5">®</span>
+                        </span>
+                        <span class="text-[8px] uppercase tracking-[0.3em] text-slate-500 font-light -mt-1">mobiapp</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Desktop Menu -->
             <div class="hidden md:flex items-center gap-8">
                 <a href="#concept" class="text-sm font-medium text-slate-400 hover:text-white transition-colors">Concept</a>
                 <a href="#ip-protection" class="text-sm font-medium text-slate-400 hover:text-white transition-colors">IP Protection</a>
@@ -98,6 +87,49 @@
                 <a href="#video" class="text-sm font-medium text-slate-400 hover:text-white transition-colors">Media</a>
                 <a href="#waitlist" class="px-5 py-2 bg-red-600 hover:bg-red-700 text-white text-xs font-bold uppercase tracking-widest rounded-xl transition-all">Join Waitlist</a>
             </div>
+
+            <div class="flex items-center gap-2">
+                <div class="hidden lg:flex items-center gap-1">
+                    <a href="https://github.com/HandbillApp" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors p-2" title="GitHub">
+                        <i data-lucide="github" class="w-5 h-5"></i>
+                    </a>
+                    <a href="https://web.facebook.com/profile.php?id=100063724675329" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors p-2" title="Facebook">
+                        <i data-lucide="facebook" class="w-5 h-5"></i>
+                    </a>
+                    <a href="https://www.instagram.com/handbill.app" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors p-2" title="Instagram">
+                        <i data-lucide="instagram" class="w-5 h-5"></i>
+                    </a>
+                    <a href="https://www.youtube.com/@HandbillApp" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white transition-colors p-2" title="YouTube">
+                        <i data-lucide="youtube" class="w-5 h-5"></i>
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="md:hidden p-2 text-slate-400 hover:text-white" id="mobile-menu-toggle">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="hidden fixed inset-0 z-50 bg-slate-950/95 backdrop-blur-xl flex flex-col items-center justify-center gap-8 md:hidden" id="mobile-menu">
+            <button class="absolute top-8 right-8 p-2 text-slate-400 hover:text-white" id="mobile-menu-close">
+                <i data-lucide="x" class="w-8 h-8"></i>
+            </button>
+            <a href="#concept" class="text-2xl font-bold text-white mobile-link">Concept</a>
+            <a href="#ip-protection" class="text-2xl font-bold text-white mobile-link">IP Protection</a>
+            <a href="#team" class="text-2xl font-bold text-white mobile-link">Team</a>
+            <a href="#video" class="text-2xl font-bold text-white mobile-link">Media</a>
+            <a href="#waitlist" class="px-8 py-4 bg-red-600 text-white text-lg font-bold uppercase tracking-widest rounded-2xl mobile-link">Join Waitlist</a>
+            
+            <div class="flex gap-6 mt-8">
+                <a href="https://github.com/HandbillApp" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white"><i data-lucide="github" class="w-6 h-6"></i></a>
+                <a href="https://web.facebook.com/profile.php?id=100063724675329" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white"><i data-lucide="facebook" class="w-6 h-6"></i></a>
+                <a href="https://www.instagram.com/handbill.app" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white"><i data-lucide="instagram" class="w-6 h-6"></i></a>
+                <a href="https://www.youtube.com/@HandbillApp" target="_blank" rel="noopener noreferrer" class="text-slate-400 hover:text-white"><i data-lucide="youtube" class="w-6 h-6"></i></a>
+            </div>
+        </div>
+    </header>
 
     <!-- Main Content -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
