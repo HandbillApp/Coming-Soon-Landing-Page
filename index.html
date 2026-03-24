@@ -449,6 +449,34 @@
         subForm.reset();
       });
 
+         // IP Acknowledgement Logic
+        const ipAck = document.getElementById('ip-ack');
+        const downloadBtn = document.getElementById('download-btn');
+        const downloadHint = document.getElementById('download-hint');
+
+        ipAck.addEventListener('change', (e) => {
+            if (e.target.checked) {
+                downloadBtn.classList.remove('opacity-50', 'pointer-events-none');
+                downloadBtn.href = '/Handbill_Patent_IP_Document.pdf'; // Assuming this path
+                downloadHint.classList.add('hidden');
+            } else {
+                downloadBtn.classList.add('opacity-50', 'pointer-events-none');
+                downloadBtn.href = '#';
+                downloadHint.classList.remove('hidden');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+
       // Intersection Observer for animations
       const observerOptions = {
         threshold: 0.15,
